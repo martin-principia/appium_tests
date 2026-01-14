@@ -12,9 +12,9 @@ def driver():
     options.set_capability("appium:udid", "WKXORG4PFIQKRWQK")
 
     # spustit konkrétní aplikaci
-    options.set_capability("appium:appPackage", "cz.seznam.mapy")
-    options.set_capability("appium:appActivity", "cz.seznam.mapy.FreemiumActivity")
-    options.set_capability("appium:appWaitPackage", "cz.seznam.mapy")
+    options.set_capability("appium:appPackage", "cz.monetplus.proidm.cpost.dev")
+    options.set_capability("appium:appActivity", "com.aheaditec.proid.presentation.activity.MainActivity")
+    options.set_capability("appium:appWaitPackage", "cz.monetplus.proidm.cpost.dev")
     options.set_capability("appium:appWaitActivity", "*")
     options.set_capability("appium:autoGrantPermissions", True)
     options.set_capability("appium:forceAppLaunch", True)
