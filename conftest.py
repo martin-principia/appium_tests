@@ -1,6 +1,12 @@
 import pytest
 from appium import webdriver
 from appium.options.android import UiAutomator2Options
+import sys
+import os
+
+# Přidá kořen projektu do PYTHONPATH
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT_DIR)
 
 
 @pytest.fixture

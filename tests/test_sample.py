@@ -1,4 +1,4 @@
-import time
+from pages.main_page import MainPage
 
 
 def test_open_notifications(driver):
@@ -6,9 +6,9 @@ def test_open_notifications(driver):
         "appId": "cz.monetplus.proidm.cpost.dev"
     })
 
-    time.sleep(0.5)
-
-    driver.find_element("xpath", '//android.view.View[@content-desc="Načíst QR kód"]').click()
+    # Main Page
+    page = MainPage(driver)
+    page.verify_page_loaded().click_qrScener().verify_page_loaded()
 
     driver.save_screenshot("screen.png")
     assert driver.session_id is not None
