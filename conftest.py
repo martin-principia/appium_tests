@@ -22,6 +22,7 @@ def driver():
     options.set_capability("appium:appActivity", "com.aheaditec.proid.presentation.activity.MainActivity")
     options.set_capability("appium:appWaitPackage", "cz.monetplus.proidm.cpost.dev")
     options.set_capability("appium:appWaitActivity", "*")
+    # options.set_capability("appium:noReset", True)
     options.set_capability("appium:autoGrantPermissions", True)
     options.set_capability("appium:forceAppLaunch", True)
 
